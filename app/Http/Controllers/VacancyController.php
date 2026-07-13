@@ -40,6 +40,7 @@ class VacancyController extends Controller
 
     public function store(Request $request)
     {
+        // Validasi input form lowongan magang
         $validated = $request->validate([
             'posisi' => 'required|string|max:255',
             'deskripsi' => 'required|string',
