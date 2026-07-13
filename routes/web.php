@@ -72,4 +72,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/2fa/verify', [TwoFactorController::class, 'verify'])->name('2fa.verify');
 });
 
+// Authentication Routes
 require __DIR__.'/auth.php';
